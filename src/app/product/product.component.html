@@ -1,0 +1,23 @@
+<div class="container mt-4 text-center" >
+  <h2>Product List</h2>
+  <table class="table table-bordered mt-3">
+    <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price (₹)</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm" (click)="viewDetails(product.id)">View Details</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

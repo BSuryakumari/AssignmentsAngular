@@ -1,0 +1,19 @@
+.card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    Padding: 20px;
+    width: 700px;
+    height:450px;
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-image img {
+    height: 400px;
+    width: auto;
+    border-radius: 8px;
+  }
+  
