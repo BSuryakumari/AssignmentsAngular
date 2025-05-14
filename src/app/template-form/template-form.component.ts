@@ -10,12 +10,21 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./template-form.component.css']
 })
 export class TemplateFormComponent {
-  formData: any = {};
+  formData: any = {
+    fullName: '',
+    email: '',
+    phone: '',
+    password: '',
+    confirmPassword: '',
+    agree: false
+  };
 
   register(form: any) {
-    if (form.valid) {
+    if (form.valid && this.formData.password === this.formData.confirmPassword) {
       console.log("Form Submitted", this.formData);
-      alert(JSON.stringify(this.formData, null, 2));
+      alert("Registration successful!");
+    } else {
+      alert("Please fix the form errors before submitting.");
     }
   }
 }

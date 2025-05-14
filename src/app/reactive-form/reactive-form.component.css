@@ -1,3 +1,13 @@
 .container {
     max-width: 400px;
   }
+
+input.ng-touched.ng-invalid,
+input.ng-dirty.ng-invalid {
+  border-color: red;
+}
+
+input.ng-touched.ng-valid,
+input.ng-dirty.ng-valid {
+  border-color: green;
+}
